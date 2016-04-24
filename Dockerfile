@@ -16,5 +16,33 @@ RUN ./build_history.sh
 # Step 9 done
 ADD test.sh /myproject/test.sh
 # Step 10 done
-CMD /bin/bash
+RUN git bisect start
 # Step 11 done
+RUN git bisect bad
+# Step 12 done
+RUN git checkout HEAD~1023
+# Step 13 done
+RUN git bisect good
+# Step 14 done
+RUN git bisect good
+# Step 15 done
+RUN git bisect bad
+# Step 16 done
+RUN git bisect bad
+# Step 17 done
+RUN git bisect bad
+# Step 18 done
+RUN git bisect bad
+# Step 19 done
+RUN git bisect bad
+# Step 20 done
+RUN git bisect bad
+# Step 21 done
+RUN git bisect bad
+# Step 22 done
+RUN git bisect bad
+# Step 23 done
+RUN git bisect good
+# Step 24 done
+CMD /bin/bash
+# Step 25 done
