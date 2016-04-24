@@ -14,5 +14,7 @@ RUN git add projectfile
 # Step 8 done
 RUN ./build_history.sh
 # Step 9 done
-CMD /bin/bash
+ADD test.sh /myproject/test.sh
 # Step 10 done
+CMD /bin/bash
+# Step 11 done
